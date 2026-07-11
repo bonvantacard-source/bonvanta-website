@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="440" viewBox="0 0 1800 440">
+  <g transform="translate(22,20) scale(0.78)">
+    <g fill="none" stroke="#42C947" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="70" y="90" width="340" height="270" rx="54"/>
+      <path d="M82 176 H398"/>
+      <path d="M286 326 L346 386 L446 272"/>
+    </g>
+  </g>
+  <text x="450" y="310"
+        font-family="Inter, Arial, sans-serif"
+        font-size="245"
+        font-weight="700"
+        letter-spacing="-8"
+        fill="#FFFFFF">Bonvanta</text>
+</svg>
