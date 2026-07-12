@@ -13,114 +13,927 @@
     'wait_for_update': 500
   });
 </script>
+
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5XCBFMQP');</script>
+<script>
+(function(w,d,s,l,i){
+  w[l]=w[l]||[];
+  w[l].push({
+    'gtm.start': new Date().getTime(),
+    event:'gtm.js'
+  });
+
+  var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),
+      dl=l!='dataLayer'?'&l='+l:'';
+
+  j.async=true;
+  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+  f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5XCBFMQP');
+</script>
 <!-- End Google Tag Manager -->
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#071b3d">
+
 <link rel="icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/styles.css">
+
 <link rel="canonical" href="https://bonvanta.com/de/">
-<link rel="alternate" hreflang="en" href="https://bonvanta.com/">
-<link rel="alternate" hreflang="de" href="https://bonvanta.com/de/">
-<link rel="alternate" hreflang="es" href="https://bonvanta.com/es/">
-<link rel="alternate" hreflang="fr" href="https://bonvanta.com/fr/">
-<link rel="alternate" hreflang="x-default" href="https://bonvanta.com/">
+
+<link
+  rel="alternate"
+  hreflang="en"
+  href="https://bonvanta.com/"
+>
+<link
+  rel="alternate"
+  hreflang="de"
+  href="https://bonvanta.com/de/"
+>
+<link
+  rel="alternate"
+  hreflang="es"
+  href="https://bonvanta.com/es/"
+>
+<link
+  rel="alternate"
+  hreflang="fr"
+  href="https://bonvanta.com/fr/"
+>
+<link
+  rel="alternate"
+  hreflang="x-default"
+  href="https://bonvanta.com/"
+>
+
 <title>Bonvanta – Digitale Stempelkarten ohne App</title>
-<meta name="description" content="Erstellen Sie digitale Stempelkarten für Apple Wallet und Google Wallet. Keine zusätzliche App erforderlich. Starten Sie Bonvanta kostenlos.">
-<meta property="og:title" content="Bonvanta – Machen Sie aus jedem Besuch Kundenbindung">
-<meta property="og:description" content="Digitale Stempelkarten ohne zusätzliche App für lokale Unternehmen.">
+
+<meta
+  name="description"
+  content="Erstellen Sie digitale Stempelkarten für Apple Wallet und Google Wallet. Keine zusätzliche App erforderlich. Starten Sie Bonvanta kostenlos."
+>
+
+<meta
+  property="og:title"
+  content="Bonvanta – Machen Sie aus jedem Besuch Kundenbindung"
+>
+<meta
+  property="og:description"
+  content="Digitale Stempelkarten ohne zusätzliche App für lokale Unternehmen."
+>
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bonvanta.com/de/">
-<meta property="og:image" content="https://bonvanta.com/assets/how-bonvanta-works.png">
+<meta
+  property="og:image"
+  content="https://bonvanta.com/assets/how-bonvanta-works.png"
+>
+
+<style>
+  .customer-demo {
+    background: #ffffff;
+  }
+
+  .customer-demo-grid {
+    display: grid;
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(280px, 420px);
+    gap: 64px;
+    align-items: center;
+  }
+
+  .customer-demo-copy {
+    max-width: 620px;
+  }
+
+  .customer-demo-copy h2 {
+    margin: 14px 0 18px;
+  }
+
+  .customer-demo-copy p {
+    margin: 0 0 22px;
+  }
+
+  .customer-demo-note {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(7, 27, 61, 0.12);
+  }
+
+  .customer-demo-note p {
+    margin-bottom: 14px;
+    font-weight: 600;
+    color: #071b3d;
+  }
+
+  .customer-demo-image {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0 22px 60px rgba(7, 27, 61, 0.16);
+  }
+
+  .customer-demo-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .customer-demo-caption {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #66758a;
+  }
+
+  @media (max-width: 860px) {
+    .customer-demo-grid {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+
+    .customer-demo-copy {
+      max-width: none;
+      text-align: center;
+    }
+
+    .customer-demo-note {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .customer-demo-image {
+      max-width: 360px;
+    }
+  }
+</style>
 </head>
+
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XCBFMQP"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+  <iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-5XCBFMQP"
+    height="0"
+    width="0"
+    style="display:none;visibility:hidden"
+  ></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
+
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="/de/" aria-label="Bonvanta home"><img src="/assets/bonvanta-logo.svg" alt="Bonvanta"></a>
-    <nav class="nav-links" aria-label="Main navigation">
+    <a
+      class="brand"
+      href="/de/"
+      aria-label="Bonvanta home"
+    >
+      <img
+        src="/assets/bonvanta-logo.svg"
+        alt="Bonvanta"
+      >
+    </a>
+
+    <nav
+      class="nav-links"
+      aria-label="Main navigation"
+    >
       <a href="/de/#features">Funktionen</a>
       <a href="/de/#how-it-works">So funktioniert es</a>
       <a href="/de/#pricing">Preise</a>
       <a href="/de/#faq">FAQ</a>
     </nav>
+
     <div class="nav-actions">
       <details class="language-menu">
-  <summary aria-label="Choose language">DE</summary>
-  <div class="language-options"><a href="/" hreflang="en"><span>EN</span>English</a><a class="active" href="/de/" hreflang="de"><span>DE</span>Deutsch</a><a href="/es/" hreflang="es"><span>ES</span>Español</a><a href="/fr/" hreflang="fr"><span>FR</span>Français</a></div>
-</details>
-      <a class="btn btn-ghost" href="https://admin.bonvanta.com">Anmelden</a>
-      <a class="btn btn-primary" href="https://admin.bonvanta.com">Kostenlos starten</a>
-      <button class="mobile-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+        <summary aria-label="Choose language">DE</summary>
+
+        <div class="language-options">
+          <a href="/" hreflang="en">
+            <span>EN</span>
+            English
+          </a>
+
+          <a
+            class="active"
+            href="/de/"
+            hreflang="de"
+          >
+            <span>DE</span>
+            Deutsch
+          </a>
+
+          <a href="/es/" hreflang="es">
+            <span>ES</span>
+            Español
+          </a>
+
+          <a href="/fr/" hreflang="fr">
+            <span>FR</span>
+            Français
+          </a>
+        </div>
+      </details>
+
+      <a
+        class="btn btn-ghost"
+        href="https://admin.bonvanta.com"
+      >
+        Anmelden
+      </a>
+
+      <a
+        class="btn btn-primary"
+        href="https://admin.bonvanta.com"
+      >
+        Kostenlos starten
+      </a>
+
+      <button
+        class="mobile-toggle"
+        type="button"
+        aria-label="Menü öffnen"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
     </div>
   </div>
 </header>
+
 <main>
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow"><span class="eyebrow-dot"></span> Digitale Kundenbindung, ohne zusätzliche App</span>
-        <h1>Machen Sie aus jedem Besuch einen Grund wiederzukommen.</h1>
-        <p>Erstellen Sie digitale Stempelkarten in Ihrem Branding, die Ihre Kunden in Apple Wallet oder Google Wallet speichern. In wenigen Minuten startklar, mit jedem Smartphone scannbar und ideal für Prämien und Wallet-Benachrichtigungen.</p>
-        <div class="hero-actions"><a class="btn btn-primary" href="https://admin.bonvanta.com">Dauerhaft kostenlos starten</a><a class="btn btn-secondary" href="#how-it-works">So funktioniert es</a></div>
-        <div class="hero-note"><span><i class="check">✓</i>Keine Kreditkarte erforderlich</span><span><i class="check">✓</i>Keine separate Loyalty-App</span><span><i class="check">✓</i>Weltweit einsetzbar</span></div>
+        <span class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          Digitale Kundenbindung, ohne zusätzliche App
+        </span>
+
+        <h1>
+          Machen Sie aus jedem Besuch einen Grund wiederzukommen.
+        </h1>
+
+        <p>
+          Erstellen Sie digitale Stempelkarten in Ihrem Branding,
+          die Ihre Kunden in Apple Wallet oder Google Wallet speichern.
+          In wenigen Minuten startklar, mit jedem Smartphone scannbar
+          und ideal für Prämien und Wallet-Benachrichtigungen.
+        </p>
+
+        <div class="hero-actions">
+          <a
+            class="btn btn-primary"
+            href="https://admin.bonvanta.com"
+          >
+            Dauerhaft kostenlos starten
+          </a>
+
+          <a
+            class="btn btn-secondary"
+            href="#how-it-works"
+          >
+            So funktioniert es
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span>
+            <i class="check">✓</i>
+            Keine Kreditkarte erforderlich
+          </span>
+
+          <span>
+            <i class="check">✓</i>
+            Keine separate Loyalty-App
+          </span>
+
+          <span>
+            <i class="check">✓</i>
+            Weltweit einsetzbar
+          </span>
+        </div>
       </div>
-      <div class="product-stage" aria-label="Bonvanta product preview">
-        <div class="dashboard"><div class="dash-top"><div class="dots"><i></i><i></i><i></i></div><div class="mini-brand"><img src="/assets/bonvanta-icon.svg" alt="">Bonvanta</div><span style="font-size:12px;color:#74839a">Overview</span></div><div class="dash-body"><div class="sidebar"><div class="side-item active"></div><div class="side-item"></div><div class="side-item"></div><div class="side-item"></div></div><div class="content"><div class="stats"><div class="stat"><b>284</b><small>Mitglieder</small></div><div class="stat"><b>1,742</b><small>Stempel</small></div><div class="stat"><b>91</b><small>Prämien</small></div></div><div class="chart"><svg viewBox="0 0 500 160" preserveAspectRatio="none" aria-hidden="true"><path d="M0 135 C60 132 72 92 132 101 S218 128 258 82 S346 42 390 61 S452 31 500 22" fill="none" stroke="#42c947" stroke-width="7" stroke-linecap="round"/><path d="M0 135 C60 132 72 92 132 101 S218 128 258 82 S346 42 390 61 S452 31 500 22 L500 160 L0 160Z" fill="rgba(66,201,71,.10)"/></svg></div></div></div></div>
-        <div class="wallet-card"><div class="wc-logo"><img src="/assets/bonvanta-icon.svg" alt=""> Bean &amp; Bloom</div><h3>Der nächste Kaffee geht auf uns.</h3><p>8 Stempel sammeln und ein Gratisgetränk erhalten.</p><div class="stamps"><span class="stamp filled">✓</span><span class="stamp filled">✓</span><span class="stamp filled">✓</span><span class="stamp filled">✓</span><span class="stamp filled">✓</span><span class="stamp"></span><span class="stamp"></span><span class="stamp"></span></div></div>
+
+      <div
+        class="product-stage"
+        aria-label="Bonvanta product preview"
+      >
+        <div class="dashboard">
+          <div class="dash-top">
+            <div class="dots">
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+
+            <div class="mini-brand">
+              <img
+                src="/assets/bonvanta-icon.svg"
+                alt=""
+              >
+              Bonvanta
+            </div>
+
+            <span style="font-size:12px;color:#74839a">
+              Overview
+            </span>
+          </div>
+
+          <div class="dash-body">
+            <div class="sidebar">
+              <div class="side-item active"></div>
+              <div class="side-item"></div>
+              <div class="side-item"></div>
+              <div class="side-item"></div>
+            </div>
+
+            <div class="content">
+              <div class="stats">
+                <div class="stat">
+                  <b>284</b>
+                  <small>Mitglieder</small>
+                </div>
+
+                <div class="stat">
+                  <b>1,742</b>
+                  <small>Stempel</small>
+                </div>
+
+                <div class="stat">
+                  <b>91</b>
+                  <small>Prämien</small>
+                </div>
+              </div>
+
+              <div class="chart">
+                <svg
+                  viewBox="0 0 500 160"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M0 135 C60 132 72 92 132 101 S218 128 258 82 S346 42 390 61 S452 31 500 22"
+                    fill="none"
+                    stroke="#42c947"
+                    stroke-width="7"
+                    stroke-linecap="round"
+                  ></path>
+
+                  <path
+                    d="M0 135 C60 132 72 92 132 101 S218 128 258 82 S346 42 390 61 S452 31 500 22 L500 160 L0 160Z"
+                    fill="rgba(66,201,71,.10)"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wallet-card">
+          <div class="wc-logo">
+            <img
+              src="/assets/bonvanta-icon.svg"
+              alt=""
+            >
+            Bean &amp; Bloom
+          </div>
+
+          <h3>Der nächste Kaffee geht auf uns.</h3>
+
+          <p>
+            8 Stempel sammeln und ein Gratisgetränk erhalten.
+          </p>
+
+          <div class="stamps">
+            <span class="stamp filled">✓</span>
+            <span class="stamp filled">✓</span>
+            <span class="stamp filled">✓</span>
+            <span class="stamp filled">✓</span>
+            <span class="stamp filled">✓</span>
+            <span class="stamp"></span>
+            <span class="stamp"></span>
+            <span class="stamp"></span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <section class="section" id="features"><div class="container"><div class="section-head"><span class="kicker">Alles, was Sie brauchen</span><h2>Einfach für Ihr Team. Mühelos für Ihre Kunden.</h2><p>Bonvanta bietet lokalen Unternehmen ein vollständiges Kundenbindungsprogramm, ohne dass Kunden eine weitere App installieren müssen.</p></div><div class="feature-grid"><article class="feature"><div class="feature-icon">◇</div><h3>Karten für Apple &amp; Google Wallet</h3><p>Kunden fügen Ihre digitale Kundenkarte direkt per QR-Code zu Apple Wallet oder Google Wallet hinzu.</p></article><article class="feature"><div class="feature-icon">⌁</div><h3>Webbasierter Scanner</h3><p>Ihr Team kann Stempel hinzufügen und Prämien über Smartphone, Tablet oder Kassencomputer einlösen.</p></article><article class="feature"><div class="feature-icon">↗</div><h3>Wallet-Benachrichtigungen</h3><p>Senden Sie rechtzeitig Neuigkeiten und Angebote, um Kunden ohne zusätzliche App zurückzubringen.</p></article><article class="feature"><div class="feature-icon">✓</div><h3>Flexible Prämien</h3><p>Erstellen Sie besuchsbasierte Stempelprogramme und legen Sie Prämien, Gültigkeit und Einlösung fest.</p></article><article class="feature"><div class="feature-icon">◎</div><h3>Kundenübersicht</h3><p>Verfolgen Sie Kartenaktivität, Stempel, Prämien und Einlösungen in einem übersichtlichen Dashboard.</p></article><article class="feature"><div class="feature-icon">∞</div><h3>Bereit zum Wachsen</h3><p>Starten Sie kostenlos und wechseln Sie pro Standort auf einen größeren Tarif, wenn Sie mehr Kapazität benötigen.</p></article></div></div></section>
-  <section class="section section-alt" id="how-it-works"><div class="container"><div class="section-head"><span class="kicker">So funktioniert es</span><h2>Starten Sie Ihr Kundenbindungsprogramm in drei Schritten.</h2><p>Keine eigene App-Entwicklung, keine Papierkarten und keine spezielle Scanner-Hardware erforderlich.</p></div><div class="steps"><article class="step"><b>1</b><h3>Karte erstellen</h3><p>Fügen Sie im Bonvanta-Dashboard Ihr Branding, das Stempelziel, die Prämie und die Kundendaten hinzu.</p></article><article class="step"><b>2</b><h3>QR-Code teilen</h3><p>Kunden scannen den Code, melden sich an und speichern die Karte mit wenigen Klicks in ihrer Wallet.</p></article><article class="step"><b>3</b><h3>Scannen und belohnen</h3><p>Ihr Team scannt die Kundenkarte, fügt Stempel hinzu und löst die Prämie nach Erreichen des Ziels ein.</p></article></div></div></section>
-  <section class="section" id="pricing"><div class="container pricing-wrap"><div class="section-head"><span class="kicker">Einfache Preise</span><h2>Kostenlos starten. Bei Bedarf erweitern.</h2><p>Keine Einrichtungsgebühr und keine Kreditkarte für den dauerhaft kostenlosen Tarif erforderlich.</p></div><div class="billing-toggle"><div class="toggle" aria-label="Billing period"><button data-billing="monthly">Monatlich</button><button class="active" data-billing="annual">Jährlich · 70 $ sparen</button></div></div><div class="price-grid"><article class="price-card"><h3>Dauerhaft kostenlos</h3><div class="price-sub">Eine praktische Möglichkeit, Ihr erstes digitales Kundenbindungsprogramm zu starten und zu testen.</div><div class="price"><strong>$0</strong><span>dauerhaft</span></div><ul class="price-list"><li>Bis zu 100 Kartenvorgänge pro Monat</li><li>100 E-Mails pro Monat</li><li>Unbegrenzte Wallet-Push-Benachrichtigungen</li><li>Keine Kreditkarte erforderlich</li></ul><a class="btn btn-secondary" href="https://admin.bonvanta.com">Kostenlos starten</a></article><article class="price-card featured"><span class="popular">Am flexibelsten</span><h3>Growth</h3><div class="price-sub">Mehr Kapazität für aktive Programme und wachsende Standorte.</div><div class="price"><strong data-price>$350</strong><span data-cadence>/Jahr</span></div><ul class="price-list"><li>Pro Standort und Login</li><li>Höhere Nutzungskapazität</li><li>Alle zentralen Loyalty-Funktionen</li><li>14 Tage Growth-Test, keine Karte erforderlich</li></ul><a class="btn btn-primary" href="https://admin.bonvanta.com">Growth kostenlos testen</a></article></div><p class="trial-note" data-annual-note>Sie sparen 70 $ gegenüber monatlicher Abrechnung.</p></div></section>
-  <section class="section section-alt" id="faq"><div class="container"><div class="section-head"><span class="kicker">FAQ</span><h2>Häufige Fragen. Klare Antworten.</h2></div><div class="faq"><details><summary>Müssen Kunden eine App herunterladen?</summary><p>Nein. Kunden öffnen Ihren QR-Link und speichern die Kundenkarte in Apple Wallet oder Google Wallet. Eine separate Bonvanta-App ist nicht erforderlich.</p></details><details><summary>Was ist ein Kartenvorgang?</summary><p>Ein Kartenvorgang ist eine verarbeitete Aktion für eine Kundenkarte, zum Beispiel das Ausstellen oder Aktualisieren einer Karte. Ihr Dashboard zeigt die Nutzung im aktuellen Zeitraum.</p></details><details><summary>Was passiert nach dem 14-tägigen Growth-Test?</summary><p>Es wird nichts automatisch berechnet. Wenn Sie keinen kostenpflichtigen Tarif wählen, wird das Konto wieder auf Dauerhaft kostenlos zurückgesetzt und unterliegt dessen Limits.</p></details><details><summary>Kann ich einen kostenpflichtigen Tarif kündigen?</summary><p>Ja. Sie können jederzeit kündigen. Der Zugriff bleibt bis zum Ende des bezahlten Abrechnungszeitraums bestehen, vorbehaltlich der Nutzungsbedingungen und Erstattungsrichtlinie.</p></details><details><summary>Kann ich Bonvanta außerhalb der USA verwenden?</summary><p>Ja. Bonvanta ist weltweit verfügbar, soweit lokale Gesetze, Wallet-Verfügbarkeit und Zahlungsunterstützung dies zulassen.</p></details></div></div></section>
-  <section class="section"><div class="container"><div class="cta"><div><h2>Bereit, jeden Besuch wertvoll zu machen?</h2><p>Erstellen Sie noch heute Ihre erste digitale Kundenkarte. Starten Sie kostenlos und erweitern Sie erst, wenn Ihr Programm wächst.</p></div><a class="btn btn-primary" href="https://admin.bonvanta.com">Dauerhaft kostenlos starten</a></div></div></section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">
+          Alles, was Sie brauchen
+        </span>
+
+        <h2>
+          Einfach für Ihr Team. Mühelos für Ihre Kunden.
+        </h2>
+
+        <p>
+          Bonvanta bietet lokalen Unternehmen ein vollständiges
+          Kundenbindungsprogramm, ohne dass Kunden eine weitere
+          App installieren müssen.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature">
+          <div class="feature-icon">◇</div>
+
+          <h3>Karten für Apple &amp; Google Wallet</h3>
+
+          <p>
+            Kunden fügen Ihre digitale Kundenkarte direkt per
+            QR-Code zu Apple Wallet oder Google Wallet hinzu.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">⌁</div>
+
+          <h3>Webbasierter Scanner</h3>
+
+          <p>
+            Ihr Team kann Stempel hinzufügen und Prämien über
+            Smartphone, Tablet oder Kassencomputer einlösen.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">↗</div>
+
+          <h3>Wallet-Benachrichtigungen</h3>
+
+          <p>
+            Senden Sie rechtzeitig Neuigkeiten und Angebote,
+            um Kunden ohne zusätzliche App zurückzubringen.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">✓</div>
+
+          <h3>Flexible Prämien</h3>
+
+          <p>
+            Erstellen Sie besuchsbasierte Stempelprogramme und
+            legen Sie Prämien, Gültigkeit und Einlösung fest.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">◎</div>
+
+          <h3>Kundenübersicht</h3>
+
+          <p>
+            Verfolgen Sie Kartenaktivität, Stempel, Prämien und
+            Einlösungen in einem übersichtlichen Dashboard.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">∞</div>
+
+          <h3>Bereit zum Wachsen</h3>
+
+          <p>
+            Starten Sie kostenlos und wechseln Sie pro Standort
+            auf einen größeren Tarif, wenn Sie mehr Kapazität
+            benötigen.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="section section-alt"
+    id="how-it-works"
+  >
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">
+          So funktioniert es
+        </span>
+
+        <h2>
+          Starten Sie Ihr Kundenbindungsprogramm in drei Schritten.
+        </h2>
+
+        <p>
+          Keine eigene App-Entwicklung, keine Papierkarten und
+          keine spezielle Scanner-Hardware erforderlich.
+        </p>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <b>1</b>
+          <h3>Karte erstellen</h3>
+
+          <p>
+            Fügen Sie im Bonvanta-Dashboard Ihr Branding,
+            das Stempelziel, die Prämie und die Kundendaten hinzu.
+          </p>
+        </article>
+
+        <article class="step">
+          <b>2</b>
+          <h3>QR-Code teilen</h3>
+
+          <p>
+            Kunden scannen den Code, melden sich an und speichern
+            die Karte mit wenigen Klicks in ihrer Wallet.
+          </p>
+        </article>
+
+        <article class="step">
+          <b>3</b>
+          <h3>Scannen und belohnen</h3>
+
+          <p>
+            Ihr Team scannt die Kundenkarte, fügt Stempel hinzu
+            und löst die Prämie nach Erreichen des Ziels ein.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="section customer-demo"
+    id="customer-demo"
+  >
+    <div class="container customer-demo-grid">
+      <div class="customer-demo-copy">
+        <span class="kicker">
+          Kundenerlebnis
+        </span>
+
+        <h2>Das erhält Ihr Kunde.</h2>
+
+        <p>
+          Scannen Sie den QR-Code mit Ihrem Smartphone, um Bonvanta
+          genau so zu erleben wie Ihre Kunden. Fügen Sie die digitale
+          Kundenkarte zu Apple Wallet oder Google Wallet hinzu und
+          sehen Sie, wie einfach das Sammeln von Stempeln ist.
+          Keine App ist erforderlich.
+        </p>
+
+        <div class="customer-demo-note">
+          <p>
+            Möchten Sie das Dashboard für Ihr Unternehmen sehen?
+          </p>
+
+          <p>
+            Klicken Sie auf „Kostenlos starten“, um ein Konto zu
+            erstellen und die Verwaltungsfunktionen für Ihr
+            Unternehmen kennenzulernen.
+          </p>
+
+          <a
+            class="btn btn-primary"
+            href="https://admin.bonvanta.com"
+          >
+            Kostenlos starten
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="customer-demo-image">
+          <img
+            src="/assets/bonvanta-demo-qr.png"
+            alt="Digitale Bean and Bloom Kundenkarte mit QR-Code zum Scannen"
+            loading="lazy"
+          >
+        </div>
+
+        <p class="customer-demo-caption">
+          Scannen Sie den QR-Code mit Ihrem Smartphone und erleben
+          Sie den Weg Ihrer Kunden selbst.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pricing">
+    <div class="container pricing-wrap">
+      <div class="section-head">
+        <span class="kicker">
+          Einfache Preise
+        </span>
+
+        <h2>
+          Kostenlos starten. Bei Bedarf erweitern.
+        </h2>
+
+        <p>
+          Keine Einrichtungsgebühr und keine Kreditkarte für den
+          dauerhaft kostenlosen Tarif erforderlich.
+        </p>
+      </div>
+
+      <div class="billing-toggle">
+        <div
+          class="toggle"
+          aria-label="Billing period"
+        >
+          <button
+            type="button"
+            data-billing="monthly"
+          >
+            Monatlich
+          </button>
+
+          <button
+            type="button"
+            class="active"
+            data-billing="annual"
+          >
+            Jährlich · 70 $ sparen
+          </button>
+        </div>
+      </div>
+
+      <div class="price-grid">
+        <article class="price-card">
+          <h3>Dauerhaft kostenlos</h3>
+
+          <div class="price-sub">
+            Eine praktische Möglichkeit, Ihr erstes digitales
+            Kundenbindungsprogramm zu starten und zu testen.
+          </div>
+
+          <div class="price">
+            <strong>$0</strong>
+            <span>dauerhaft</span>
+          </div>
+
+          <ul class="price-list">
+            <li>Bis zu 100 Kartenvorgänge pro Monat</li>
+            <li>100 E-Mails pro Monat</li>
+            <li>Unbegrenzte Wallet-Push-Benachrichtigungen</li>
+            <li>Keine Kreditkarte erforderlich</li>
+          </ul>
+
+          <a
+            class="btn btn-secondary"
+            href="https://admin.bonvanta.com"
+          >
+            Kostenlos starten
+          </a>
+        </article>
+
+        <article class="price-card featured">
+          <span class="popular">
+            Am flexibelsten
+          </span>
+
+          <h3>Growth</h3>
+
+          <div class="price-sub">
+            Mehr Kapazität für aktive Programme und wachsende Standorte.
+          </div>
+
+          <div class="price">
+            <strong data-price>$350</strong>
+            <span data-cadence>/Jahr</span>
+          </div>
+
+          <ul class="price-list">
+            <li>Pro Standort und Login</li>
+            <li>Höhere Nutzungskapazität</li>
+            <li>Alle zentralen Loyalty-Funktionen</li>
+            <li>14 Tage Growth-Test, keine Karte erforderlich</li>
+          </ul>
+
+          <a
+            class="btn btn-primary"
+            href="https://admin.bonvanta.com"
+          >
+            Growth kostenlos testen
+          </a>
+        </article>
+      </div>
+
+      <p
+        class="trial-note"
+        data-annual-note
+      >
+        Sie sparen 70 $ gegenüber monatlicher Abrechnung.
+      </p>
+    </div>
+  </section>
+
+  <section
+    class="section section-alt"
+    id="faq"
+  >
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">FAQ</span>
+
+        <h2>Häufige Fragen. Klare Antworten.</h2>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>
+            Müssen Kunden eine App herunterladen?
+          </summary>
+
+          <p>
+            Nein. Kunden öffnen Ihren QR-Link und speichern die
+            Kundenkarte in Apple Wallet oder Google Wallet.
+            Eine separate Bonvanta-App ist nicht erforderlich.
+          </p>
+        </details>
+
+        <details>
+          <summary>Was ist ein Kartenvorgang?</summary>
+
+          <p>
+            Ein Kartenvorgang ist eine verarbeitete Aktion für
+            eine Kundenkarte, zum Beispiel das Ausstellen oder
+            Aktualisieren einer Karte. Ihr Dashboard zeigt die
+            Nutzung im aktuellen Zeitraum.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Was passiert nach dem 14-tägigen Growth-Test?
+          </summary>
+
+          <p>
+            Es wird nichts automatisch berechnet. Wenn Sie keinen
+            kostenpflichtigen Tarif wählen, wird das Konto wieder
+            auf Dauerhaft kostenlos zurückgesetzt und unterliegt
+            dessen Limits.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Kann ich einen kostenpflichtigen Tarif kündigen?
+          </summary>
+
+          <p>
+            Ja. Sie können jederzeit kündigen. Der Zugriff bleibt
+            bis zum Ende des bezahlten Abrechnungszeitraums bestehen,
+            vorbehaltlich der Nutzungsbedingungen und
+            Erstattungsrichtlinie.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Kann ich Bonvanta außerhalb der USA verwenden?
+          </summary>
+
+          <p>
+            Ja. Bonvanta ist weltweit verfügbar, soweit lokale
+            Gesetze, Wallet-Verfügbarkeit und Zahlungsunterstützung
+            dies zulassen.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta">
+        <div>
+          <h2>
+            Bereit, jeden Besuch wertvoll zu machen?
+          </h2>
+
+          <p>
+            Erstellen Sie noch heute Ihre erste digitale Kundenkarte.
+            Starten Sie kostenlos und erweitern Sie erst, wenn Ihr
+            Programm wächst.
+          </p>
+        </div>
+
+        <a
+          class="btn btn-primary"
+          href="https://admin.bonvanta.com"
+        >
+          Dauerhaft kostenlos starten
+        </a>
+      </div>
+    </div>
+  </section>
 </main>
+
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="/assets/bonvanta-logo-white.svg" alt="Bonvanta">
-        <p>Digitale Stempelkarten ohne zusätzliche App, mit denen lokale Unternehmen aus Erstbesuchern Stammkunden machen.</p>
+        <img
+          src="/assets/bonvanta-logo-white.svg"
+          alt="Bonvanta"
+        >
+
+        <p>
+          Digitale Stempelkarten ohne zusätzliche App, mit denen
+          lokale Unternehmen aus Erstbesuchern Stammkunden machen.
+        </p>
       </div>
+
       <div class="footer-col">
         <h4>Produkt</h4>
         <a href="/de/#features">Funktionen</a>
         <a href="/de/#pricing">Preise</a>
-        <a href="https://admin.bonvanta.com">Unternehmens-Login</a>
+        <a href="https://admin.bonvanta.com">
+          Unternehmens-Login
+        </a>
         <a href="/de/contact/">Support</a>
       </div>
+
       <div class="footer-col">
         <h4>Rechtliches</h4>
-        <a href="/privacy.html">Datenschutzerklärung (EN)</a>
-        <a href="/terms.html">Nutzungsbedingungen (EN)</a>
-        <a href="/refunds.html">Erstattungsrichtlinie (EN)</a>
-        <a href="/cookies.html">Cookie-Richtlinie (EN)</a>
+        <a href="/privacy.html">
+          Datenschutzerklärung (EN)
+        </a>
+        <a href="/terms.html">
+          Nutzungsbedingungen (EN)
+        </a>
+        <a href="/refunds.html">
+          Erstattungsrichtlinie (EN)
+        </a>
+        <a href="/cookies.html">
+          Cookie-Richtlinie (EN)
+        </a>
       </div>
     </div>
+
     <div class="footer-bottom">
-      <span>© 2026 Ukrainian Projects, L.L.C. Alle Rechte vorbehalten.</span>
-      <span>59 SW 12th Ave, Suite 102, Dania Beach, FL 33004, United States</span>
+      <span>
+        © 2026 Ukrainian Projects, L.L.C.
+        Alle Rechte vorbehalten.
+      </span>
+
+      <span>
+        59 SW 12th Ave, Suite 102, Dania Beach,
+        FL 33004, United States
+      </span>
     </div>
   </div>
 </footer>
-<div class="cookie-banner" role="dialog" aria-label="Cookie-Einstellungen">
-  <p><strong>Ihre Datenschutzeinstellungen</strong>Wir verwenden notwendige Cookies für den Betrieb der Website und optionale Google-Analytics-Cookies zur Auswertung des öffentlichen Website-Traffics. <a href="/cookies.html" style="text-decoration:underline">Mehr erfahren</a>.</p>
+
+<div
+  class="cookie-banner"
+  role="dialog"
+  aria-label="Cookie-Einstellungen"
+>
+  <p>
+    <strong>Ihre Datenschutzeinstellungen</strong>
+    <br>
+    Wir verwenden notwendige Cookies für den Betrieb der Website
+    und optionale Google-Analytics-Cookies zur Auswertung des
+    öffentlichen Website-Traffics.
+
+    <a
+      href="/cookies.html"
+      style="text-decoration:underline"
+    >
+      Mehr erfahren
+    </a>.
+  </p>
+
   <div class="cookie-actions">
-    <button class="btn btn-secondary" data-cookie-reject>Optionale ablehnen</button>
-    <button class="btn btn-primary" data-cookie-accept>Analytics akzeptieren</button>
+    <button
+      class="btn btn-secondary"
+      type="button"
+      data-cookie-reject
+    >
+      Optionale ablehnen
+    </button>
+
+    <button
+      class="btn btn-primary"
+      type="button"
+      data-cookie-accept
+    >
+      Analytics akzeptieren
+    </button>
   </div>
 </div>
+
 <script src="/script.js"></script>
-</body></html>
+</body>
+</html>
