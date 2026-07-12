@@ -39,6 +39,90 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bonvanta.com/es/">
 <meta property="og:image" content="https://bonvanta.com/assets/how-bonvanta-works.png">
+
+<style>
+  .customer-demo {
+    background: #ffffff;
+  }
+
+  .customer-demo-grid {
+    display: grid;
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(280px, 420px);
+    gap: 64px;
+    align-items: center;
+  }
+
+  .customer-demo-copy {
+    max-width: 620px;
+  }
+
+  .customer-demo-copy h2 {
+    margin: 14px 0 18px;
+  }
+
+  .customer-demo-copy p {
+    margin: 0 0 22px;
+  }
+
+  .customer-demo-note {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(7, 27, 61, 0.12);
+  }
+
+  .customer-demo-note p {
+    margin-bottom: 14px;
+    font-weight: 600;
+    color: #071b3d;
+  }
+
+  .customer-demo-image {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0 22px 60px rgba(7, 27, 61, 0.16);
+  }
+
+  .customer-demo-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .customer-demo-caption {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #66758a;
+  }
+
+  @media (max-width: 860px) {
+    .customer-demo-grid {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+
+    .customer-demo-copy {
+      max-width: none;
+      text-align: center;
+    }
+
+    .customer-demo-note {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .customer-demo-image {
+      max-width: 360px;
+    }
+  }
+</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -82,7 +166,92 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
   <section class="section" id="features"><div class="container"><div class="section-head"><span class="kicker">Todo lo que necesitas</span><h2>Fácil para tu equipo. Sin esfuerzo para tus clientes.</h2><p>Bonvanta ofrece a los negocios locales una experiencia completa de fidelización sin pedir a los clientes que instalen otra aplicación.</p></div><div class="feature-grid"><article class="feature"><div class="feature-icon">◇</div><h3>Tarjetas listas para Wallet</h3><p>Los clientes añaden una tarjeta de fidelización con tu marca directamente a Apple Wallet o Google Wallet mediante un código QR.</p></article><article class="feature"><div class="feature-icon">⌁</div><h3>Escáner web</h3><p>Tu equipo puede añadir sellos y canjear recompensas desde un móvil, una tableta o el ordenador del mostrador.</p></article><article class="feature"><div class="feature-icon">↗</div><h3>Notificaciones en la Wallet</h3><p>Envía novedades y ofertas oportunas para hacer que los clientes vuelvan sin exigir una aplicación móvil adicional.</p></article><article class="feature"><div class="feature-icon">✓</div><h3>Recompensas flexibles</h3><p>Crea programas de sellos por visitas, define recompensas y controla las reglas de caducidad y canje.</p></article><article class="feature"><div class="feature-icon">◎</div><h3>Información de clientes</h3><p>Consulta la actividad de las tarjetas, los sellos, las recompensas y los canjes desde un único panel.</p></article><article class="feature"><div class="feature-icon">∞</div><h3>Preparado para crecer</h3><p>Empieza gratis y mejora el plan por ubicación cuando tu programa necesite más capacidad.</p></article></div></div></section>
-  <section class="section section-alt" id="how-it-works"><div class="container"><div class="section-head"><span class="kicker">Cómo funciona</span><h2>Lanza tu programa de fidelización en tres pasos.</h2><p>Sin desarrollar una app propia, sin tarjetas impresas y sin hardware especial de escaneo.</p></div><div class="steps"><article class="step"><b>1</b><h3>Crea tu tarjeta</h3><p>Añade la imagen de tu negocio, el objetivo de sellos, la recompensa y los datos del cliente en el panel de Bonvanta.</p></article><article class="step"><b>2</b><h3>Comparte tu código QR</h3><p>Los clientes escanean, se unen y guardan la tarjeta en la wallet de su teléfono en pocos pasos.</p></article><article class="step"><b>3</b><h3>Escanea y recompensa</h3><p>Tu personal escanea la tarjeta del cliente para añadir sellos y canjear la recompensa al alcanzar el objetivo.</p></article></div></div></section>
+  <section
+    class="section section-alt"
+    id="how-it-works"
+  >
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">
+          Cómo funciona
+        </span>
+
+        <h2>
+          Descubre todo el recorrido del cliente de un vistazo.
+        </h2>
+
+        <p>
+          Desde el primer escaneo del código QR hasta la recogida
+          de sellos, la recompensa y la siguiente visita.
+        </p>
+      </div>
+
+      <div class="how-visual">
+        <img
+          src="/assets/how-bonvanta-works.png"
+          alt="Guía visual que muestra cómo los clientes se unen a Bonvanta, guardan su tarjeta de fidelización, acumulan sellos, desbloquean recompensas y vuelven"
+          loading="lazy"
+        >
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="section customer-demo"
+    id="customer-demo"
+  >
+    <div class="container customer-demo-grid">
+      <div class="customer-demo-copy">
+        <span class="kicker">
+          Experiencia del cliente
+        </span>
+
+        <h2>Esto es lo que recibe tu cliente.</h2>
+
+        <p>
+          Escanea el código QR con tu teléfono para experimentar
+          Bonvanta exactamente como lo haría tu cliente. Añade la
+          tarjeta digital de fidelización a Apple Wallet o Google
+          Wallet y comprueba lo fácil que es empezar a acumular
+          sellos. No se necesita ninguna aplicación.
+        </p>
+
+        <div class="customer-demo-note">
+          <p>
+            ¿Quieres ver el panel de administración del negocio?
+          </p>
+
+          <p>
+            Haz clic en «Empezar gratis» para crear una cuenta y
+            explorar las herramientas de gestión disponibles para
+            el negocio.
+          </p>
+
+          <a
+            class="btn btn-primary"
+            href="https://admin.bonvanta.com"
+          >
+            Empezar gratis
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="customer-demo-image">
+          <img
+            src="/assets/bonvanta-demo-qr.png"
+            alt="Tarjeta digital de fidelización Bean and Bloom con un código QR para escanear"
+            loading="lazy"
+          >
+        </div>
+
+        <p class="customer-demo-caption">
+          Escanea el código QR con tu teléfono para vivir
+          la experiencia de tu cliente.
+        </p>
+      </div>
+    </div>
+  </section>
   <section class="section" id="pricing"><div class="container pricing-wrap"><div class="section-head"><span class="kicker">Precios sencillos</span><h2>Empieza gratis. Mejora cuando tu programa crezca.</h2><p>Sin cuota de configuración y sin tarjeta de crédito para el plan Gratis para siempre.</p></div><div class="billing-toggle"><div class="toggle" aria-label="Billing period"><button data-billing="monthly">Mensual</button><button class="active" data-billing="annual">Anual · ahorra 70 $</button></div></div><div class="price-grid"><article class="price-card"><h3>Gratis para siempre</h3><div class="price-sub">Una forma práctica de lanzar y probar tu primer programa digital de fidelización.</div><div class="price"><strong>$0</strong><span>para siempre</span></div><ul class="price-list"><li>Hasta 100 operaciones de tarjeta al mes</li><li>100 correos electrónicos al mes</li><li>Notificaciones push de Wallet ilimitadas</li><li>No se requiere tarjeta de crédito</li></ul><a class="btn btn-secondary" href="https://admin.bonvanta.com">Empezar gratis</a></article><article class="price-card featured"><span class="popular">Más flexible</span><h3>Growth</h3><div class="price-sub">Más capacidad para programas activos y ubicaciones en crecimiento.</div><div class="price"><strong data-price>$350</strong><span data-cadence>/año</span></div><ul class="price-list"><li>Por ubicación e inicio de sesión</li><li>Mayor capacidad operativa</li><li>Todas las funciones principales de fidelización</li><li>Prueba Growth de 14 días, sin tarjeta</li></ul><a class="btn btn-primary" href="https://admin.bonvanta.com">Probar Growth gratis</a></article></div><p class="trial-note" data-annual-note>Ahorra 70 $ frente a la facturación mensual.</p></div></section>
   <section class="section section-alt" id="faq"><div class="container"><div class="section-head"><span class="kicker">Preguntas frecuentes</span><h2>Preguntas resueltas.</h2></div><div class="faq"><details><summary>¿Los clientes tienen que descargar una app?</summary><p>No. Los clientes abren tu enlace QR y guardan la tarjeta de fidelización en Apple Wallet o Google Wallet. No necesitan una aplicación Bonvanta independiente.</p></details><details><summary>¿Qué es una operación de tarjeta?</summary><p>Es una actividad procesada para una tarjeta de fidelización, como emitirla o actualizarla. El panel muestra el uso del periodo actual.</p></details><details><summary>¿Qué ocurre después de la prueba Growth de 14 días?</summary><p>No se realiza ningún cobro automático. Si no eliges un plan de pago, la cuenta vuelve a Gratis para siempre y queda sujeta a sus límites.</p></details><details><summary>¿Puedo cancelar un plan de pago?</summary><p>Sí. Puedes cancelarlo en cualquier momento. El acceso continúa hasta el final del periodo pagado, de acuerdo con los Términos y la Política de reembolsos.</p></details><details><summary>¿Puedo usar Bonvanta fuera de Estados Unidos?</summary><p>Sí. Bonvanta está disponible en todo el mundo, sujeto a la legislación local, la disponibilidad de las wallets y la compatibilidad de pagos.</p></details></div></div></section>
   <section class="section"><div class="container"><div class="cta"><div><h2>¿Listo para aprovechar cada visita?</h2><p>Crea hoy tu primera tarjeta digital de fidelización. Empieza gratis y mejora solo cuando tu programa crezca.</p></div><a class="btn btn-primary" href="https://admin.bonvanta.com">Empezar gratis para siempre</a></div></div></section>
