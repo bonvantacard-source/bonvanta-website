@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://bonvanta.com/</loc></url>
+  <url><loc>https://bonvanta.com/de/</loc></url>
+  <url><loc>https://bonvanta.com/es/</loc></url>
+  <url><loc>https://bonvanta.com/fr/</loc></url>
+  <url><loc>https://bonvanta.com/en/contact/</loc></url>
+  <url><loc>https://bonvanta.com/de/contact/</loc></url>
+  <url><loc>https://bonvanta.com/es/contact/</loc></url>
+  <url><loc>https://bonvanta.com/fr/contact/</loc></url>
   <url><loc>https://bonvanta.com/privacy.html</loc></url>
   <url><loc>https://bonvanta.com/terms.html</loc></url>
   <url><loc>https://bonvanta.com/refunds.html</loc></url>

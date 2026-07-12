@@ -1,4 +1,3 @@
-
 (function () {
   const menuButton = document.querySelector('.mobile-toggle');
   const navLinks = document.querySelector('.nav-links');
@@ -10,6 +9,14 @@
     navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
   }
 
+  const strings = {
+    en: { month: '/month', year: '/year', annual: 'Save $70 compared with monthly billing.', monthly: 'Cancel anytime. Access continues through the paid period.' },
+    de: { month: '/Monat', year: '/Jahr', annual: 'Sie sparen 70 $ gegenüber monatlicher Abrechnung.', monthly: 'Jederzeit kündbar. Der Zugang bleibt bis zum Ende des bezahlten Zeitraums aktiv.' },
+    es: { month: '/mes', year: '/año', annual: 'Ahorra 70 $ frente a la facturación mensual.', monthly: 'Cancela cuando quieras. El acceso continúa hasta el final del periodo pagado.' },
+    fr: { month: '/mois', year: '/an', annual: 'Économisez 70 $ par rapport à la facturation mensuelle.', monthly: 'Résiliez à tout moment. L’accès reste actif jusqu’à la fin de la période payée.' }
+  };
+  const lang = (document.documentElement.lang || 'en').slice(0,2);
+  const s = strings[lang] || strings.en;
   const monthly = document.querySelector('[data-billing="monthly"]');
   const annual = document.querySelector('[data-billing="annual"]');
   const amount = document.querySelector('[data-price]');
@@ -21,8 +28,8 @@
     monthly.classList.toggle('active', !isAnnual);
     annual.classList.toggle('active', isAnnual);
     amount.textContent = isAnnual ? '$350' : '$35';
-    cadence.textContent = isAnnual ? '/year' : '/month';
-    if (annualNote) annualNote.textContent = isAnnual ? 'Save $70 compared with monthly billing.' : 'Cancel anytime. Access continues through the paid period.';
+    cadence.textContent = isAnnual ? s.year : s.month;
+    if (annualNote) annualNote.textContent = isAnnual ? s.annual : s.monthly;
   }
   if (monthly && annual) {
     monthly.addEventListener('click', () => setBilling('monthly'));
@@ -34,27 +41,27 @@
   const accept = document.querySelector('[data-cookie-accept]');
   const reject = document.querySelector('[data-cookie-reject]');
   const choice = localStorage.getItem('bonvanta_cookie_choice');
-  function loadAnalytics() {
-    const gaId = window.BONVANTA_GA_ID;
-    if (!gaId || gaId === 'G-XXXXXXXXXX') return;
-    const s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(gaId);
-    document.head.appendChild(s);
+  function updateConsent(granted) {
     window.dataLayer = window.dataLayer || [];
-    window.gtag = function(){ dataLayer.push(arguments); };
-    gtag('js', new Date());
-    gtag('config', gaId, { anonymize_ip: true });
+    window.gtag = window.gtag || function(){ dataLayer.push(arguments); };
+    gtag('consent', 'update', {
+      analytics_storage: granted ? 'granted' : 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
   }
   if (!choice && banner) banner.classList.add('show');
-  if (choice === 'analytics') loadAnalytics();
+  if (choice === 'analytics') updateConsent(true);
+  if (choice === 'essential') updateConsent(false);
   if (accept) accept.addEventListener('click', function () {
     localStorage.setItem('bonvanta_cookie_choice', 'analytics');
-    banner.classList.remove('show');
-    loadAnalytics();
+    if (banner) banner.classList.remove('show');
+    updateConsent(true);
   });
   if (reject) reject.addEventListener('click', function () {
     localStorage.setItem('bonvanta_cookie_choice', 'essential');
-    banner.classList.remove('show');
+    if (banner) banner.classList.remove('show');
+    updateConsent(false);
   });
 })();
