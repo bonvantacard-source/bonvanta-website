@@ -142,6 +142,89 @@
       }
     }
   </script>
+
+  <style>
+    .customer-demo {
+      background: #ffffff;
+    }
+
+    .customer-demo-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+      gap: 64px;
+      align-items: center;
+    }
+
+    .customer-demo-copy {
+      max-width: 620px;
+    }
+
+    .customer-demo-copy h2 {
+      margin: 14px 0 18px;
+    }
+
+    .customer-demo-copy p {
+      margin: 0 0 22px;
+    }
+
+    .customer-demo-note {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(7, 27, 61, 0.12);
+    }
+
+    .customer-demo-note p {
+      margin-bottom: 14px;
+      font-weight: 600;
+      color: #071b3d;
+    }
+
+    .customer-demo-image {
+      display: block;
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 24px;
+      box-shadow: 0 22px 60px rgba(7, 27, 61, 0.16);
+    }
+
+    .customer-demo-image img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .customer-demo-caption {
+      margin-top: 14px;
+      text-align: center;
+      font-size: 14px;
+      color: #66758a;
+    }
+
+    @media (max-width: 860px) {
+      .customer-demo-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .customer-demo-copy {
+        max-width: none;
+        text-align: center;
+      }
+
+      .customer-demo-note {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .customer-demo-image {
+        max-width: 360px;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -486,6 +569,55 @@
         </div>
       </div>
     </section>
+
+
+    <section class="section customer-demo" id="customer-demo">
+      <div class="container customer-demo-grid">
+        <div class="customer-demo-copy">
+          <span class="kicker">Customer experience</span>
+
+          <h2>This is what your customer gets.</h2>
+
+          <p>
+            Scan the QR code with your phone to experience Bonvanta
+            exactly as your customer would. Add the digital loyalty card
+            to Apple Wallet or Google Wallet and see how simple it is to
+            start collecting stamps. No app is required.
+          </p>
+
+          <div class="customer-demo-note">
+            <p>Want to see the business dashboard?</p>
+
+            <p>
+              Click Start free to create an account and explore the
+              tools available to the business.
+            </p>
+
+            <a
+              class="btn btn-primary"
+              href="https://admin.bonvanta.com"
+            >
+              Start free
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="customer-demo-image">
+            <img
+              src="/assets/bonvanta-demo-qr.png"
+              alt="Bean and Bloom digital loyalty card with a QR code for customers to scan"
+              loading="lazy"
+            >
+          </div>
+
+          <p class="customer-demo-caption">
+            Scan the QR code with your phone to experience the customer journey.
+          </p>
+        </div>
+      </div>
+    </section>
+
 
     <section class="section" id="pricing">
       <div class="container pricing-wrap">
