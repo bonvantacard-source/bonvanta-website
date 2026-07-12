@@ -39,6 +39,90 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bonvanta.com/fr/">
 <meta property="og:image" content="https://bonvanta.com/assets/how-bonvanta-works.png">
+
+<style>
+  .customer-demo {
+    background: #ffffff;
+  }
+
+  .customer-demo-grid {
+    display: grid;
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(280px, 420px);
+    gap: 64px;
+    align-items: center;
+  }
+
+  .customer-demo-copy {
+    max-width: 620px;
+  }
+
+  .customer-demo-copy h2 {
+    margin: 14px 0 18px;
+  }
+
+  .customer-demo-copy p {
+    margin: 0 0 22px;
+  }
+
+  .customer-demo-note {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(7, 27, 61, 0.12);
+  }
+
+  .customer-demo-note p {
+    margin-bottom: 14px;
+    font-weight: 600;
+    color: #071b3d;
+  }
+
+  .customer-demo-image {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0 22px 60px rgba(7, 27, 61, 0.16);
+  }
+
+  .customer-demo-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .customer-demo-caption {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #66758a;
+  }
+
+  @media (max-width: 860px) {
+    .customer-demo-grid {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+
+    .customer-demo-copy {
+      max-width: none;
+      text-align: center;
+    }
+
+    .customer-demo-note {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .customer-demo-image {
+      max-width: 360px;
+    }
+  }
+</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -82,7 +166,92 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
   <section class="section" id="features"><div class="container"><div class="section-head"><span class="kicker">Tout ce qu’il vous faut</span><h2>Simple pour votre équipe. Fluide pour vos clients.</h2><p>Bonvanta offre aux commerces locaux une expérience complète de fidélité sans demander aux clients d’installer une nouvelle application.</p></div><div class="feature-grid"><article class="feature"><div class="feature-icon">◇</div><h3>Cartes compatibles Wallet</h3><p>Les clients ajoutent directement votre carte de fidélité à Apple Wallet ou Google Wallet grâce à un code QR.</p></article><article class="feature"><div class="feature-icon">⌁</div><h3>Scanner web</h3><p>Votre équipe ajoute des tampons et valide les récompenses depuis un téléphone, une tablette ou l’ordinateur du comptoir.</p></article><article class="feature"><div class="feature-icon">↗</div><h3>Notifications Wallet</h3><p>Envoyez des actualités et des offres au bon moment pour faire revenir les clients sans application mobile supplémentaire.</p></article><article class="feature"><div class="feature-icon">✓</div><h3>Récompenses flexibles</h3><p>Créez des programmes basés sur les visites, définissez les récompenses et gérez les règles d’expiration et d’utilisation.</p></article><article class="feature"><div class="feature-icon">◎</div><h3>Données clients</h3><p>Suivez l’activité des cartes, les tampons, les récompenses et les utilisations depuis un tableau de bord clair.</p></article><article class="feature"><div class="feature-icon">∞</div><h3>Conçu pour évoluer</h3><p>Commencez gratuitement, puis passez à une offre supérieure par établissement lorsque vous avez besoin de plus de capacité.</p></article></div></div></section>
-  <section class="section section-alt" id="how-it-works"><div class="container"><div class="section-head"><span class="kicker">Comment ça marche</span><h2>Lancez votre programme de fidélité en trois étapes.</h2><p>Aucun développement d’application, aucune carte imprimée et aucun matériel de scan spécialisé.</p></div><div class="steps"><article class="step"><b>1</b><h3>Créez votre carte</h3><p>Ajoutez votre identité visuelle, l’objectif de tampons, la récompense et les informations client dans le tableau de bord Bonvanta.</p></article><article class="step"><b>2</b><h3>Partagez votre code QR</h3><p>Les clients scannent, s’inscrivent et enregistrent la carte dans le Wallet de leur téléphone en quelques gestes.</p></article><article class="step"><b>3</b><h3>Scannez et récompensez</h3><p>Votre équipe scanne la carte du client pour ajouter des tampons et valider la récompense lorsque l’objectif est atteint.</p></article></div></div></section>
+  <section
+    class="section section-alt"
+    id="how-it-works"
+  >
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">
+          Comment ça marche
+        </span>
+
+        <h2>
+          Découvrez le parcours complet de vos clients en un coup d’œil.
+        </h2>
+
+        <p>
+          Du premier scan du code QR à la collecte des tampons,
+          jusqu’à la récompense et à la prochaine visite.
+        </p>
+      </div>
+
+      <div class="how-visual">
+        <img
+          src="/assets/how-bonvanta-works.png"
+          alt="Guide visuel montrant comment les clients rejoignent Bonvanta, enregistrent leur carte de fidélité, collectent des tampons, débloquent des récompenses et reviennent"
+          loading="lazy"
+        >
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="section customer-demo"
+    id="customer-demo"
+  >
+    <div class="container customer-demo-grid">
+      <div class="customer-demo-copy">
+        <span class="kicker">
+          Expérience client
+        </span>
+
+        <h2>Voici ce que reçoit votre client.</h2>
+
+        <p>
+          Scannez le code QR avec votre téléphone pour découvrir
+          Bonvanta exactement comme votre client. Ajoutez la carte
+          de fidélité numérique à Apple Wallet ou Google Wallet et
+          voyez à quel point il est simple de commencer à collecter
+          des tampons. Aucune application n’est nécessaire.
+        </p>
+
+        <div class="customer-demo-note">
+          <p>
+            Vous souhaitez voir le tableau de bord de l’établissement ?
+          </p>
+
+          <p>
+            Cliquez sur « Commencer gratuitement » pour créer un compte
+            et découvrir les outils de gestion disponibles pour
+            l’établissement.
+          </p>
+
+          <a
+            class="btn btn-primary"
+            href="https://admin.bonvanta.com"
+          >
+            Commencer gratuitement
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="customer-demo-image">
+          <img
+            src="/assets/bonvanta-demo-qr.png"
+            alt="Carte de fidélité numérique Bean and Bloom avec un code QR à scanner"
+            loading="lazy"
+          >
+        </div>
+
+        <p class="customer-demo-caption">
+          Scannez le code QR avec votre téléphone pour vivre
+          l’expérience de votre client.
+        </p>
+      </div>
+    </div>
+  </section>
   <section class="section" id="pricing"><div class="container pricing-wrap"><div class="section-head"><span class="kicker">Tarifs simples</span><h2>Commencez gratuitement. Évoluez avec votre programme.</h2><p>Aucun frais d’installation et aucune carte bancaire requise pour l’offre Gratuite pour toujours.</p></div><div class="billing-toggle"><div class="toggle" aria-label="Billing period"><button data-billing="monthly">Mensuel</button><button class="active" data-billing="annual">Annuel · économisez 70 $</button></div></div><div class="price-grid"><article class="price-card"><h3>Gratuit pour toujours</h3><div class="price-sub">Une façon simple de lancer et tester votre premier programme de fidélité numérique.</div><div class="price"><strong>$0</strong><span>pour toujours</span></div><ul class="price-list"><li>Jusqu’à 100 opérations de carte par mois</li><li>100 e-mails par mois</li><li>Notifications push Wallet illimitées</li><li>Aucune carte bancaire requise</li></ul><a class="btn btn-secondary" href="https://admin.bonvanta.com">Commencer gratuitement</a></article><article class="price-card featured"><span class="popular">Le plus flexible</span><h3>Growth</h3><div class="price-sub">Plus de capacité pour les programmes actifs et les établissements en croissance.</div><div class="price"><strong data-price>$350</strong><span data-cadence>/an</span></div><ul class="price-list"><li>Par établissement et identifiant</li><li>Capacité d’utilisation supérieure</li><li>Toutes les fonctions essentielles de fidélité</li><li>Essai Growth de 14 jours, sans carte bancaire</li></ul><a class="btn btn-primary" href="https://admin.bonvanta.com">Essayer Growth gratuitement</a></article></div><p class="trial-note" data-annual-note>Économisez 70 $ par rapport à la facturation mensuelle.</p></div></section>
   <section class="section section-alt" id="faq"><div class="container"><div class="section-head"><span class="kicker">FAQ</span><h2>Vos questions, nos réponses.</h2></div><div class="faq"><details><summary>Les clients doivent-ils télécharger une application ?</summary><p>Non. Ils ouvrent votre lien QR et enregistrent la carte dans Apple Wallet ou Google Wallet. Aucune application Bonvanta séparée n’est nécessaire.</p></details><details><summary>Qu’est-ce qu’une opération de carte ?</summary><p>Il s’agit d’une action traitée pour une carte de fidélité, par exemple son émission ou sa mise à jour. Le tableau de bord affiche votre utilisation pour la période en cours.</p></details><details><summary>Que se passe-t-il après l’essai Growth de 14 jours ?</summary><p>Aucun paiement n’est prélevé automatiquement. Si vous ne choisissez pas d’offre payante, le compte revient à l’offre Gratuite pour toujours et à ses limites.</p></details><details><summary>Puis-je résilier une offre payante ?</summary><p>Oui. Vous pouvez résilier à tout moment. L’accès reste actif jusqu’à la fin de la période payée, sous réserve des Conditions d’utilisation et de la Politique de remboursement.</p></details><details><summary>Puis-je utiliser Bonvanta en dehors des États-Unis ?</summary><p>Oui. Bonvanta est disponible dans le monde entier, sous réserve des lois locales, de la disponibilité des wallets et de la prise en charge des paiements.</p></details></div></div></section>
   <section class="section"><div class="container"><div class="cta"><div><h2>Prêt à valoriser chaque visite ?</h2><p>Créez votre première carte de fidélité numérique dès aujourd’hui. Commencez gratuitement et évoluez uniquement lorsque votre programme grandit.</p></div><a class="btn btn-primary" href="https://admin.bonvanta.com">Commencer gratuitement pour toujours</a></div></div></section>
