@@ -101,6 +101,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     color: #66758a;
   }
 
+
+  .video-showcase {
+    background: #ffffff;
+  }
+
+  .video-showcase .section-head {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bonvanta-video {
+    width: min(100%, 380px);
+    aspect-ratio: 9 / 16;
+    margin: 34px auto 0;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #071b3d;
+    box-shadow: 0 22px 60px rgba(7, 27, 61, 0.16);
+  }
+
+  .bonvanta-video iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
   @media (max-width: 860px) {
     .customer-demo-grid {
       grid-template-columns: 1fr;
@@ -192,6 +220,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           alt="Guía visual que muestra cómo los clientes se unen a Bonvanta, guardan su tarjeta de fidelización, acumulan sellos, desbloquean recompensas y vuelven"
           loading="lazy"
         >
+      </div>
+    </div>
+  </section>
+
+  <section class="section video-showcase" id="video">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Bonvanta en acción</span>
+
+        <h2>Descubre cómo funciona la fidelización digital en la práctica.</h2>
+
+        <p>
+          Mira cómo los clientes se registran, guardan su tarjeta de
+          fidelización, acumulan sellos y desbloquean recompensas con Bonvanta.
+        </p>
+      </div>
+
+      <div class="bonvanta-video">
+        <iframe
+          src="https://www.youtube.com/embed/BaYCcCdB-Es?rel=0&amp;playsinline=1"
+          title="Cómo funciona Bonvanta"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   </section>
@@ -293,3 +347,4 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <script src="/script.js"></script>
 </body></html>
+
